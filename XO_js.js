@@ -63,6 +63,7 @@ function reset_board()
 {
 	document.getElementById("reset").disabled = true;
 	document.getElementById("create").disabled = false;
+	document.getElementById("history_turn").value = "";
 	$("#board").html("");
 	$("#re_board").html("");
 }
