@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title>XO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="XO_css.css"> 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="XO_js.js"></script> 	
+
+</head> 
+  
+<body>
+	<div class="main"> 
+		<P>XO</P>
+		<p>ตารางตั้งแต่ 4x4 ขึ้นไปจะชนะโดยเรียงกัน 4 ตัว</p>
+		<div id="status"></div>
+		Size: <input type="text" id= "size" name="size" onchange="checkNumber(this);" placeholder="Size of board(number) ">
+		<button id="create" name="create" onclick="create_board()">create</button>	
+		<button id="reset" name="reset" onclick="reset_board()" disabled="disabled">reset</button>	
+	</div> 
+	</br>
+	<div id="board"></div>
+	</br>
+	<div>
+		<textarea id="history_turn" name="history_turn" rows="6" readonly></textarea>
+		<button id="save" name="save" onclick="save_history()">save</button>
+	</div>
+	<div id="history"></div>
+	</br>
+	<div> 
+		<!--Round: <input type="text" id= "round" name="round" onchange="checkround(this);" placeholder="round(number) ">-->
+		Replay Turn: <input type="text" id= "turn" name="turn" onchange="checkturn(this);" placeholder="turn(number) ">
+		<button id="replay" name="replay" onclick="replay_board()">replay</button>		
+	</div> 
+	</br>
+	<div id="re_board"></div>
+
+
+</body> 
+</html>

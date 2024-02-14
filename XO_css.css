@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+	text-align: center;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buttons {
+	background-color: #B0E0E6;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+}
+
+.buttons:hover {
+	background-color: #FFBA66;
+	box-shadow: inset 0px 0px 10px 5px #FF6F00 ;
+	transform: scale(1.125);
+}
+
+.buttons:active {
+	transform: scale(1.025);
+}
